@@ -1,0 +1,15 @@
+# bbe-clj
+Bristol Betting Exchange in Clojure
+
+as explained in https://arxiv.org/abs/2105.08310
+
+This library contain impl for all the parts described in the paper. The library is used to compose
+BBE instances which can then be executed in what ever way the end use want. For example single threaded or using core.async etc.
+
+To add your own bettor impl a function of the form TODO and add to your BBE instance using.
+(bbe/add-bettor bbe bettor-fn)
+
+* Changes from original paper
++ bbe-clj is made to output format compatible with the Betfair Pro Plan for historical data.
++ Only allow bettors to place at odds supported in the betfair ladder, need to be enforced since we assume valid bets in all places.
++ Only limit orders are supported

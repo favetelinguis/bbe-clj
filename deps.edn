@@ -1,0 +1,5 @@
+{:deps {org.clojure/test.check {:mvn/version "1.1.1"}
+        net.sekao/odoyle-rules {:mvn/version "1.0.0"}
+        org.scicloj/clay {:mvn/version "2-alpha57"}
+        org.scicloj/kindly {:mvn/version "4-alpha11"}
+        meander/epsilon {:mvn/version "0.0.650"}}}
